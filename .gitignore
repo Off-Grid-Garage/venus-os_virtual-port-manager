@@ -1,0 +1,48 @@
+# ------------------------------
+# Virtual Port Manager .gitignore
+# ------------------------------
+
+# Runit supervise directories
+supervise/
+*/supervise/
+
+# Runit log directories
+log/
+*/log/
+
+# Venus OS runtime service folders
+/service/
+data/etc/runit/*
+!/runit-templates/
+
+# PTY devices
+/dev/ttyV*
+ttyV*
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Editor artefacts
+.DS_Store
+Thumbs.db
+*.kate-swp
+*.vscode/
+.idea/
+
+# Shell history (just in case)
+*.history
+
+# Backup files
+*~
+*.old
+
+# Python cache (if ever used)
+__pycache__/
+*.pyc
+
+# GitHub Desktop cruft
+*.orig
