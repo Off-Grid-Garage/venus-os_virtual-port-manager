@@ -29,3 +29,4 @@ v1.0.2 - Refined enable.sh and disable.sh (2026-05-21)
 - Added consistent marker‑based patching for both JK‑PB and watchdog blocks
 - Ensured enable.sh restores both rc.local blocks reliably after disable
 - Minor cosmetic and structural cleanup for maintainability
+- Fixed README paths referencing old /data/apps/virtual-port directory
