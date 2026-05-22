@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APPDIR="/data/apps/virtual-port"
+APPDIR="/data/apps/virtual-port-manager"
 CONFIG="$APPDIR/config.ini"
 VERSIONFILE="$APPDIR/VERSION"
 

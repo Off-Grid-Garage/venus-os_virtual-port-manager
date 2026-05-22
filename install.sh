@@ -10,7 +10,7 @@
 # Idempotent and GitHub-ready
 #
 
-APPDIR="/data/apps/virtual-port"
+APPDIR="/data/apps/virtual-port-manager"
 CONFIG="$APPDIR/config.ini"
 
 VERSION=$(head -n 1 "$APPDIR/VERSION")

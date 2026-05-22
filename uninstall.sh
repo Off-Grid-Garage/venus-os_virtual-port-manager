@@ -8,7 +8,7 @@
 #   - rc.local block added by installer
 #
 # Leaves:
-#   - /data/apps/virtual-port/ folder
+#   - /data/apps/virtual-port-manager/ folder
 #   - config.ini
 #   - dbus-serialbattery installation
 #
