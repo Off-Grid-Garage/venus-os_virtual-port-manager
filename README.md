@@ -14,8 +14,6 @@ sh /tmp/vpm-install.sh
 ```
 After installation, reboot your device.
 
----
-
 ## 🔍 Check Status
 ```
 sh /data/apps/virtual-port-manager/status.sh
@@ -28,8 +26,6 @@ Shows:
 - watchdog status
 - Waveshare TCP connectivity
 - last 10 watchdog events
-
----
 
 ## 🔄 Restart Channels
 ```
@@ -44,21 +40,15 @@ Restart socat only:
 sh /data/apps/virtual-port-manager/restart_socat.sh
 ```
 
----
-
 ## 📴 Disable VPM
 ```
 sh /data/apps/virtual-port-manager/disable.sh
 ```
 
----
-
 ## 🟢 Enable VPM
 ```
 sh /data/apps/virtual-port-manager/enable.sh
 ```
-
----
 
 ## 🧹 Uninstall
 ```
@@ -87,7 +77,6 @@ This enables Venus OS to treat each BMS as if it were connected to a dedicated U
 ---
 
 ## Features
-
 - Supports up to 15 JK‑PB BMS on a single RS485 bus  
 - Creates stable virtual serial ports (`/dev/ttyV0__0x01`, `/dev/ttyV0__0x02`, …)  
 - Fully supervised via runit  
@@ -104,7 +93,6 @@ This enables Venus OS to treat each BMS as if it were connected to a dedicated U
 ---
 
 ## Folder Structure
-
 ```
 virtual-port-manager/
 ├── bin/
