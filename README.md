@@ -1,8 +1,76 @@
 # Virtual Port Manager (VPM) for Venus OS
 
+[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](ca://s?q=Show_VPM_version)
+[![Installer](https://img.shields.io/badge/install-One--Line-green.svg)](ca://s?q=Show_VPM_installer)
+[![Platform](https://img.shields.io/badge/platform-Venus%20OS-orange.svg)](ca://s?q=Show_supported_platforms)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](ca://s?q=Show_VPM_license)
+
+## ⭐ Quick Start
+Install the Virtual Port Manager on any Venus OS device in 10 seconds:
+
+```
+wget -O /tmp/vpm-install.sh https://raw.githubusercontent.com/Off-Grid-Garage/venus-os_virtual-port-manager/main/vpm-install.sh
+sh /tmp/vpm-install.sh
+```
+After installation, reboot your device.
+
+---
+
+## 🔍 Check Status
+```
+sh /data/apps/virtual-port-manager/status.sh
+```
+Shows:
+- VPM version
+- PTY status
+- socat status
+- dbus‑serialbattery status
+- watchdog status
+- Waveshare TCP connectivity
+- last 10 watchdog events
+
+---
+
+## 🔄 Restart Channels
+```
+sh /data/apps/virtual-port-manager/restart.sh
+```
+Restart only channel 0:
+```
+sh /data/apps/virtual-port-manager/restart.sh 0
+```
+Restart socat only:
+```
+sh /data/apps/virtual-port-manager/restart_socat.sh
+```
+
+---
+
+## 📴 Disable VPM
+```
+sh /data/apps/virtual-port-manager/disable.sh
+```
+
+---
+
+## 🟢 Enable VPM
+```
+sh /data/apps/virtual-port-manager/enable.sh
+```
+
+---
+
+## 🧹 Uninstall
+```
+sh /data/apps/virtual-port-manager/uninstall.sh
+```
+
+---
+
 ## Overview
 
-The Virtual Port Manager provides a scalable, stable, and reproducible way to expose multiple JK‑PB BMS units over a single RS485‑TCP interface (e.g., Waveshare RS485‑to‑Ethernet: https://s.click.aliexpress.com/e/_c4nhBqYP) to Venus OS.
+The Virtual Port Manager provides a scalable, stable, and reproducible way to expose multiple JK‑PB BMS units over a single RS485‑TCP interface (e.g., Waveshare 
+RS485‑to‑Ethernet: https://s.click.aliexpress.com/e/_c4nhBqYP) to Venus OS.
 
 It creates virtual PTY devices (`/dev/ttyV0`, `/dev/ttyV1`, …) and manages:
 
@@ -10,7 +78,7 @@ It creates virtual PTY devices (`/dev/ttyV0`, `/dev/ttyV1`, …) and manages:
 - runit service supervision  
 - automatic restart logic  
 - clean shutdown  
-- multi‑BMS polling  
+- multi-BMS polling  
 - integration with dbus‑serialbattery  
 - operator‑friendly restart/status tooling  
 
